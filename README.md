@@ -5,7 +5,7 @@ Title Self-Explainatory.
 
 ## License
 This work is under the MIT License. See the [LICENSE](./LICENSE) file for details.
-2025 - 2035 Synthron Corporation. All rights reserved.
+2025 Synthron Corporation. All rights reserved.
 Permission is hereby granted to use this script under the conditions that:
 1. I, Charlotte (IRL) or Creation3201 (Roblox) and TheCar_Developer (Discord), be credited as the original author.
 2. This script is not re-uploaded anywhere else unless allowed.
