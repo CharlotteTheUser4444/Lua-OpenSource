@@ -4,6 +4,7 @@ Permission is hereby granted to use this script provided that:
 1. Credit is given to the author: Charlotte (IRL) or Creation3201 (Roblox) and TheCar_Developer (Discord).
 2. This script is not re-uploaded elsewhere without permission.
 3. This script is not used for commercial purposes.
+4. This repository may not be forked without permission from the author.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
