@@ -3,6 +3,9 @@ Welcome to this Repo. You may even find this post.
 Title Self-Explainatory.
 
 ## If the code provided in the "Lua" folder you believe to be broken or unusable. Contact Thecar_Developer on Discord
+You can view the asset's Source Code.
+## WARNING: THIS MUST BE COMMITTED IN COMMANDBAR INSIDE ROBLOX STUDIO
+DO NOT PUT THE CODE IN SERVER-SCRIPT OR CLIENT-SCRIPT because it's not gonna work :3
 
 ## License
 This work is under the MIT License. See the [LICENSE](./LICENSE) file for details.
