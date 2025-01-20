@@ -8,14 +8,13 @@ local marketplaceInfoFound = false
 local backdoorFound = false
 
 local backdoorPatterns = {
-	"getfenv", "setfenv", "loadstring", "bit32", "require%s*%b()",
+	 "bit32%s*%b()", "require%s*%b()",
 	"\\%d+\\%d+", "0x%x+", "%w+%=%w+", "[A-Za-z0-9%p]{8,}"
 }
 
 local whitelist = {
 	"LogFile_Old",
 	"LogFile",
-
 }
 
 local function isWhitelisted(script)
@@ -43,8 +42,8 @@ local function BeginFind(script)
 			requireFound = true
 		end
 
-		if lineLower:find("bit32") then
-			table.insert(findings, {pattern = "bit32", script = script:GetFullName(), line = lineNumber})
+		if lineLower:find("bit32%s*%b()") then
+			table.insert(findings, {pattern = "bit32()", script = script:GetFullName(), line = lineNumber})
 			found = true
 			bit32Found = true
 		end
@@ -67,7 +66,7 @@ end
 
 local function scanScripts()
 	for _, child in ipairs(game:GetDescendants()) do
-		if child:IsA("ModuleScript") or child:IsA("LocalScript") or child:IsA("Script") then
+		if child:IsA("BaseScript") then
 			BeginFind(child)
 		end
 	end
@@ -80,6 +79,7 @@ local function renameOldLogFile()
 	if oldLogFile then
 		oldLogFile.Name = "LogFile_Old"
 		warn("Old log file renamed to 'LogFile_Old'.")
+		oldLogFile:Destroy()
 	end
 end
 
