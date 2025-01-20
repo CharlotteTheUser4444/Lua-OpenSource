@@ -4,7 +4,10 @@ local foundBit32 = false
 local foundRequire = false
 local foundMarketplaceInfo = false
 
-local function skibidi_sigma(script)
+local function BeginFind(script)
+	
+	if not script.Source then return end
+	
 	if script.Source:find("bit32") then
 		table.insert(findings, {pattern = "bit32", script = script:GetFullName()})
 		found = true
@@ -28,15 +31,16 @@ local function skibidi_sigma(script)
 	end
 end
 
-local function ass()
+local function scanScripts()
 	for _, child in ipairs(game:GetDescendants()) do
 		if child:IsA("ModuleScript") or child:IsA("LocalScript") or child:IsA("Script") then
-			skibidi_sigma(child)
+			BeginFind(child)
 		end
 	end
 end
 
-ass()
+scanScripts()
+
 
 local logFile = Instance.new("ModuleScript")
 logFile.Name = "LogFile"
