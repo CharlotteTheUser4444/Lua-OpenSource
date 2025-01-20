@@ -1,4 +1,4 @@
-## © 2025 - 2035 Synthron Corporation. All rights reserved.
+## © 2025 Synthron Corporation. All rights reserved.
 
 Permission is hereby granted to use this script provided that:
 1. Credit is given to the author: Charlotte (IRL) or Creation3201 (Roblox) and TheCar_Developer (Discord).
